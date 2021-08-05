@@ -1,0 +1,71 @@
+// Custom Cards - like on DYM Setups page
+
+.custom-card {
+    margin-top: 15px;
+    background-color: white;
+
+    .custom-card-footer,
+    .custom-card-content {
+        width: 100%;
+    }
+
+    .custom-card-content {
+        padding: 15px;
+        order: 1;
+    }
+
+    .custom-card-footer {
+        padding: 7.5px 15px;
+        order: 2;
+    }
+
+    .icon-dym-edit, .icon-dym-remove {
+        font-size: 14px;
+    }
+
+    .custom-card-footer {
+        color: $gray-100;
+        span, a, strong {
+            color: $gray-100;
+        }
+        a {
+            background-color: rgba($gray-100, 0.2);
+            width: 24px;
+            height: 24px;
+            display: block;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    a, a:hover {
+        text-decoration: none;
+    }
+
+    .sub-card {
+        span, a, strong {
+            color: $gray-100;
+            opacity: .7;
+        }
+    }
+}
+
+@each $name, $color in $account-colors {
+    .custom-card.#{$name} {
+        .custom-card-icon {
+            color: $color;
+        }
+
+        .custom-card-footer {
+            background-color: $color;
+        }
+    }
+
+    .custom-card.#{$name} .sortable-ghost {
+        background-color: $color;
+        color: $gray-100;
+        margin-bottom: 0;
+        opacity: .3;
+        order: 2;
+        transition: all 150ms;
+    }
+}

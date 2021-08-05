@@ -1,0 +1,61 @@
+@import "~vue_root/assets/scss/_variables.scss";
+
+.dashboard-container {
+   
+    .progress {
+        height: 50px;
+        margin-bottom:10px;
+        .progress-bar {
+            background: $gray-600;
+            padding: 5px;
+            &.available {
+                background-color: $secondary;
+            }      
+        }
+        .today-marker {
+            position: absolute;
+            height: 75px;
+            border-left: 2px solid #000;
+        }
+    }
+
+    .everyday-spending-status {
+        .circle {
+            flex-basis: 100px;
+            text-align: center;
+
+            > div {
+                width: 75px;
+                height: 75px;
+                background: linear-gradient(45deg, #51c78c 39%, #7ae5b1 100%);
+                border-radius: 50%;
+
+                i {
+                    font-size: 32px;
+
+                    // The higher line height and negative margin are required to keep it centered, because this glyph is a little off-center by iteself
+                    line-height: 80px;
+                    margin-left: -4px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .available-balance-items > div {
+        margin-bottom: 25px;
+
+        .available-balance-item-icon {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        @each $colorname, $color in $account-colors {
+                .#{$colorname} {
+                    background-color: $color;
+                }
+            }
+        }
+    }

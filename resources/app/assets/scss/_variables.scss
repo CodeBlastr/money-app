@@ -1,0 +1,97 @@
+// Boostrap defaults
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+
+// Defaults
+$body-color: #A4A7AB;
+$text-color: $body-color;
+$body-color-dark: #202a35;
+$body-bg: #f6f8fa;
+
+// Container
+$container-large-desktop: 1300px + $grid-gutter-width;
+$container-lg: $container-large-desktop;
+
+// Color
+$primary: #3E9AE9;
+$secondary: #00C292;
+
+// /* 
+//    $theme-colors map is how to override Bootstrap colors per:
+//    https://getbootstrap.com/docs/4.0/getting-started/theming/#theme-colors
+// */
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary
+);
+
+// Color Variants
+$primary-hover: #4cabfc;
+$secondary-hover: #11e2ae;
+$primary-pressed: #3386cd;
+$secondary-pressed: #03ac82;
+
+$link-color: $primary;
+$link-hover-color: $primary-hover;
+
+$card-footer-background-color: #FAFBFC;
+
+$account-colors: (
+	gray: #9fa6ae,
+	light-gray: #b2bac3,
+	light-orange: #ffc181,
+	orange: #fb9576,
+	pink: #dc82ab,
+	purple: #7180cd,
+	teal: #54cad4,
+	violet: #aa8ae2,
+	green: $secondary
+ );
+
+// Grays
+$gray-400: $body-color;
+$gray-600: #d4d4d4;
+$gray-700: $body-color-dark;
+
+// Buttons
+// # Custom Size
+$padding-medium-vertical: 0.6rem;
+$padding-medium-horizontal: 0.9rem;
+$font-size-medium: 1rem;
+$line-height-medium: 1.5;
+$btn-border-radius-medium: 0.2rem;
+
+
+
+// Typography
+$font-family-sans-serif: Gibson, sans-serif;
+$local-font: true;
+$font-family-name: Gibson;
+$font-file-path: /fonts / vendor / gibson;
+$font-file-names: (regular: 3739BC_4_0, light: 3739BC_7_0, semibold: 3739BC_5_0, bold: 3739BC_3_0);
+
+$font-weights: (regular: 400, light: 300, semibold: 600, bold: 700);
+
+// /*
+//  breakpoint variables
+//  usage: @media #{insert_breakpoint_variable} {}
+// */
+
+$widthPhone: 320px;
+$widthPhoneLandscape: 480px;
+$widthTablet: 768px;
+$widthTabletLandscape: 992px;
+$widthDesktop: 1200px;
+$widthDesktopWide: 1400px;
+$breakpointPhoneMax: "only screen and (max-width : $widthPhone)";
+$breakpointPhoneLandscapeMax: "only screen and (max-width : $widthPhoneLandscape)";
+$breakpointTabletMax: "only screen and (max-width : $widthTablet)";
+$breakpointTabletLandscapeMax: "only screen and (max-width : $widthTabletLandscape)";
+$breakpointDesktopMax: "only screen and (max-width : $widthDesktop)";
+$breakpointDesktopWideMax: "only screen and (max-width : $widthDesktopWide)";
+$breakpointPhoneMin: "only screen and (min-width : $widthPhone)";
+$breakpointPhoneLandscapeMin: "only screen and (min-width : $widthPhoneLandscape)";
+$breakpointTabletMin: "only screen and (min-width : $widthTablet)";
+$breakpointTabletLandscapeMin: "only screen and (min-width : $widthTabletLandscape)";
+$breakpointDesktopMin: "only screen and (min-width : $widthDesktop)";
+$breakpointDesktopWideMin: "only screen and (min-width : $widthDesktopWide)";

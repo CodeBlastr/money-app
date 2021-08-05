@@ -1,0 +1,55 @@
+@import "mixins/_font-face";
+
+@if $local-font == true {
+    @each $style, $value in $font-file-names {
+        @include font-face($path: $font-file-path/$value, $weight: map-get($font-weights, $style));
+    }
+}
+// Typography
+body {
+    font-family: $font-family-sans-serif;
+}
+h1, .h1 {
+    font-size: 30px;
+}
+h2, .h2 {
+    font-size: 21px;
+}
+h3, .h3 {
+    font-size: 18px;
+}
+h4, .h4 {
+    font-size: 16px;
+}
+h5, .h5 {
+    font-size: 14px;
+}
+h6, .h6 {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+    font-weight: map-get($font-weights, semibold);
+}
+h6 {
+    font-weight: map-get($font-weights, regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color:$body-color-dark;
+}
+
+.lg-text {
+    font-size:1.1rem;
+}

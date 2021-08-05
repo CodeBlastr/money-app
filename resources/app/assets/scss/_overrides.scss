@@ -1,0 +1,17 @@
+@import "node_modules/bootstrap/scss/_mixins";
+
+// Global overrides
+// # The extend Bootstrap builtin styles globally so it needn't be done differently every file
+
+@import "./overrides/_badges";
+@import "./overrides/_buttons";
+@import "./overrides/_cards";
+@import "./overrides/_custom-cards";
+@import "./overrides/_colors";
+@import "./overrides/_icons";
+@import "./overrides/_layout";
+@import "./overrides/_lists";
+@import "./overrides/_padding";
+@import "./overrides/_progress-badge.scss";
+@import "./overrides/_tables";
+@import "./overrides/_typography";

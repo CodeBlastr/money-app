@@ -1,0 +1,99 @@
+@import "~vue_root/assets/scss/_variables.scss";
+
+.dashboard-sidebar-content {
+    background-color: white;
+    min-height: 100vh;
+
+    .dashboard-logo-content {
+        border-bottom: 1px solid $gray-200;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+        img.logo {
+            width: 125px;
+            text-align: center;
+        }
+    }
+
+    .dashboard-sidebar-avatar {
+        margin: 15px 0 0 0;
+        text-align: center;
+        width: 100%;
+
+        img {
+            border-radius: 500px;
+            width: 75px;
+        }
+
+        h4 {
+            padding: 5px;
+            font-size: 15px;
+            color: #444;
+        }
+    }
+
+    .dashboard-sidebar-nav {
+        ul {
+            list-style: none;
+            li {
+                cursor: pointer;
+                color: #888;
+                &:hover {
+                    color: #444;
+                }
+                &.router-link-active.router-link-exact-active {
+                    color: $link-color;
+                }
+            }
+        }
+        width: 100%;
+    }
+}
+
+.dashboard-header-body-footer {
+    > .row {
+        min-height: 100%;
+    }
+}
+
+.dashboard-header-content {
+    background-color: $primary;
+    color: white;
+    padding: 25px;
+
+    .header-alert {
+        .fa-bell-o {
+            padding: 5px;
+            border-radius: 500px;
+            border: 1px solid white;
+        }
+
+        .fa-circle {
+            font-size: 8px;
+            color: #CFAF82;
+            top: -8px;
+            position: relative;
+            right: 17px;
+        }
+    }
+}
+
+.dashboard-footer-content {
+    font-size: 14px;
+    border-top: 1px solid $gray-200;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.alpha {
+    padding-left: 0;
+}
+
+.omega {
+    padding-right: 0;
+}
+
+.dashboard-sidebar-padding {
+    padding: 15px;
+}

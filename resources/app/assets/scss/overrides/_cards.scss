@@ -1,0 +1,18 @@
+// Footer
+
+.card {
+	border-color: transparent;
+}
+
+.card-footer {	
+	background-color:$card-footer-background-color;
+	box-shadow: 0 0 0 1px $gray-200;
+	border: 1px solid transparent;
+	// Box shadow is used instead of a border here, because box-sizing inlines the border and leaves a white outline, whereas box-shadow doesn't.  Otherwise look identical
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+p.card-title {
+	margin-bottom: 0;
+}

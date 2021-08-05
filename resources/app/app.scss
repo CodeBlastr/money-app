@@ -1,0 +1,16 @@
+// Bootstrap-Vue CSS
+@import "node_modules/bootstrap-vue/dist/bootstrap-vue";
+
+// Globals
+@import "~vue_root/assets/scss/_variables";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Bootstrap Overrides 
+@import "~vue_root/assets/scss/_overrides";
+
+
+#vueApp {
+    .vueOnePage {}
+}
