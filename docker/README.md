@@ -6,13 +6,6 @@ Using docker for local development is a bit of a paradigm shift. The most import
 
 ##Docker setup definitions:
 
-- git_base_repo_link: git@bitbucket.org:defendyourmoney/defendyourmoney-laravel-vue.git
-- local_folder_name: defendyourmoney.app - We recommend you create a folder *in your USER folder* with this name
-- docker_image_names: see [docker-compose.yml](../docker-compose.yml)
-- docker_container_names: see [docker-compose.yml](../docker-compose.yml)
-- docker_service_names: see [docker-compose.yml](../docker-compose.yml)
-- local_development_url:  [http://192.168.99.100/](http://192.168.99.100/)
-- containers_finished_running_string: "[docker_container_names] is running!"
 
 ##Before you begin:
 
